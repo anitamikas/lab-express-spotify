@@ -1,0 +1,23 @@
+ {{!-- create artist-search-results.hbs file inside views folder and display name, image, and button --}}
+<section class="searchResults">
+    
+{{#each artistArr}}
+<div class="container">
+<img class="artistImg" src="{{this.images.[0].url}}" alt="imageArtist">
+<p>{{this.name}}</p>
+{{!-- {{#each this.images}}
+<img class="artistImg" src="{{this.url}}" alt="imageArtist">
+{{/each}} --}}
+<a href="/albums/{{this.id}}">View Albums</a>
+{{!-- <button type="submit">View albums</button> --}}
+</div>
+{{/each}}
+
+
+</section>
+
+{{!-- {{#each this.images}}
+<img class="artistImg" src="{{this.url}}" alt="imageArtist">
+{{/each}} --}}
+
+{{!-- <img class="artistImg" src="{{this.images.[0].url}}" alt="imageArtist"> --}}

@@ -1,0 +1,15 @@
+<form action="/albums/:artistId", method="GET"></form>
+
+<section class="albumsResults">
+    
+{{#each album}}
+<div class="container">
+    <img class="artistImg" src="{{this.images.[0].url}}" alt="imageAlbum">
+<p class="album">{{this.name}}</p>
+<button type="submit"><a href="/tracks/{{this.id}}">View Tracks</a></button>
+</div>
+{{/each}}
+
+
+<button type="submit"><a href="/albums/{{currentId}}?offset={{nextOffset}}">Next</a></button>
+</section>

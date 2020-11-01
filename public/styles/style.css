@@ -1,0 +1,74 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 300;
+  /* display: flex; */
+}
+
+.indexSection{
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+background-image:url("/images/spotify-background.jpeg");
+background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 0 0;
+  position: relative;
+  
+  flex-direction: column;
+  align-items: center;
+
+}
+/* ls {
+    display: flex-wrap;
+    flex-direction: row;
+    align-items: center;
+    /* border: solid grey; */
+    /* padding: 30px 0;
+    border-width: 0 0 1px 0;
+  } */ 
+
+.artistImg{
+    height: 200px;
+    /* margin: 50px 25px 0 25px; */
+    
+}
+
+.container{
+    flex: 0 0 200px;
+    margin: 50px;
+    padding: 24px;
+    width: 200px;
+    margin-bottom: 50px;
+    border: 1pt solid black;
+    text-align: center;
+
+}
+
+.searchResults{
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+ /* align-items: center; */
+ align-content: space-between;
+  /* justify-content: space-evenly; */
+ 
+  /* justify-content: space-evenly; */
+  
+}
+
+button{
+    display: flex;
+    justify-content: center;
+}

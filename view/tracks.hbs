@@ -1,0 +1,11 @@
+<form action="/tracks/:artistId", method="GET"></form>
+
+<section class="albumsResults">
+    
+{{#each track}}
+<div class="container">
+    {{!-- <img class="artistImg" src="{{this.images.[0].url}}" alt="imageAlbum"> --}}
+<p class="album">{{this.name}}</p>
+<audio controls src="{{this.preview_url}}"></audio>
+</div>
+{{/each}}
